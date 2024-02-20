@@ -1,0 +1,54 @@
+/* ====================
+	* common
+==================== */
+html, body {overflow-x: hidden;}
+a {display: block;}
+.font-qsand{font-family: 'Quicksand',sans-serif;}
+.inner-layer{max-width: 1400px;margin: 0 auto;}
+
+
+/* ====================
+	* container
+==================== */
+.tit {margin: 150px 0px 120px; color: #4c4c4f; font-size: 45px; font-weight: 700; text-align: center; letter-spacing: 10px;}
+.tit span {display: inline-block ;position: relative; margin-right: 5px; color: #ff584c; font-size: 70px; vertical-align: text-bottom;}
+.tit span:before {display: block; content: ''; clear: both; position: absolute; top: -5px; left: 40%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 6px; height: 6px; background-color: #ffa54c; border-radius: 50%;}
+/* project */
+#project {margin-bottom: 150px;}
+#project h3 {margin-bottom: 30px; font-size: 25px;}
+#columns {column-width:370px; column-gap: 50px;}
+#columns figure {display: inline-block;  border:1px solid rgba(0,0,0,0.2); margin:0; margin-bottom: 50px; padding:10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); }
+#columns figure:hover:before, #columns figure:active:before, #columns figure:focus:before, #columns figure.on:before {z-index: -1; background: transparent;}
+#columns figure img {width:100%;}
+#columns figure figcaption {border-top:1px solid rgba(0,0,0,0.2); padding:10px; margin-top:11px;}
+#columns figure figcaption:after {display: block;content: '';clear: both;}
+#columns figure figcaption h4{position: relative; display: inline-block; margin: 5px 0 10px; font-size: 20px;}
+#columns figure figcaption h4:before {display: block; content: ''; clear: both; position: absolute; left:0; bottom: 0; z-index: -1; width: 0%; height: 12px; background-color: rgba(255,88,76,0.6); -webkit-transition: 0.2s ease-in-out; transition: 0.2s ease-in-out; }
+#columns figure:hover figcaption h4:before, #columns figure:active figcaption h4:before, #columns figure:focus figcaption h4:before {width: 100%;}
+.btn-home {display: inline-block; float: right; margin-top: 10px; padding: 10px 15px; border-radius: 30px; border: 2px solid #ff584c; color: #ff584c !important; text-align: center; font-weight: 700; letter-spacing: 1px; -webkit-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out; }
+.btn-home i {margin-top: -1px; color: #ff584c; font-size: 20px; vertical-align: middle; -webkit-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out; }
+.btn-home:hover, .btn-home:active, .btn-home:focus {background: #ff584c; color: #fff !important;}
+.btn-home:hover i, .btn-home:active i, .btn-home:focus i {color: #fff !important;}
+.detail-txt li {position: relative; padding-left: 10px; line-height: 1.8;}
+.detail-txt li:before {display: block; content: ''; clear: both; position: absolute; top: 11px; left: 0px; width: 3px; height: 3px; border-radius: 50%; background-color: #000;}
+
+@media screen and (max-width:1024px) {
+	.tit {margin: 80px 0 50px; font-size: 35px; letter-spacing: 6px;}
+	.tit span {font-size: 55px;}
+	#project h3 {margin-bottom: 15px; font-size: 20px;}
+	.project-txt {margin: 40px 0 60px;}
+}
+@media screen and (max-width:767px) {
+	/* ===== container ===== */
+	.tit {margin: 60px 0 40px; font-size: 30px; letter-spacing: 3px;}
+	.tit span {font-size: 45px;}
+	#project h3 {margin-bottom: 10px; font-size: 16px;}
+	.project-txt {margin: 15px 0 45px; font-size: 16px;}
+	#columns figure figcaption h4 {font-size: 18px;}
+}
+
+@media screen and (max-width:420px) {
+	/* ===== container ===== */
+	.tit {margin: 60px 0 30px; font-size: 22px; letter-spacing: 1px;}
+	.tit span {font-size: 40px;}
+}
